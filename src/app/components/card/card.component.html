@@ -1,0 +1,14 @@
+<mat-card *ngIf="character" class="rick-morty-card">
+  <mat-card-header>
+    <div mat-card-avatar class="card-image"></div>
+    <mat-card-title class="card-title">{{character.name}}</mat-card-title>
+    <mat-card-subtitle class="card-subtitle">{{character.species}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{character.image}}" alt="rick-and-morty">
+  <mat-card-content>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Open Details</button>
+  </mat-card-actions>
+</mat-card>
